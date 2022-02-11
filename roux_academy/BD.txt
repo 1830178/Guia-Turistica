@@ -1,0 +1,16 @@
+--
+-- Base de datos: `Guia turistica`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `atraccion`
+--
+
+CREATE TABLE `atraccion` (
+  `id_atr` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `info` varchar(500) NOT NULL,
+  `img` longblob NOT NULL
+) ;
