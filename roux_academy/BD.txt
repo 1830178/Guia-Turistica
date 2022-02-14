@@ -1,16 +1,31 @@
 --
--- Base de datos: `Guia turistica`
+-- Database: guia_turistica
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `atraccion`
+-- Table structure for table atraccion
 --
 
-CREATE TABLE `atraccion` (
-  `id_atr` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `nombre` varchar(100) NOT NULL,
-  `info` varchar(500) NOT NULL,
-  `img` longblob NOT NULL
-) ;
+CREATE TABLE atraccion (
+  id int(11) NOT NULL,
+  nombre varchar(50) DEFAULT NULL,
+  descripcion varchar(200) DEFAULT NULL,
+  img varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- --------------------------------------------------------
+
+--
+-- Table structure for table usuarios
+--
+
+CREATE TABLE usuarios (
+  id int(11) NOT NULL,
+  usuario varchar(50) DEFAULT NULL,
+  contrasena varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
