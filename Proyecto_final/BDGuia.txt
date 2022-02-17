@@ -12,12 +12,23 @@ CREATE TABLE atraccion (
   id int(11) NOT NULL,
   nombre varchar(50) DEFAULT NULL,
   descripcion varchar(200) DEFAULT NULL,
+  id_ubicacion
   img varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- --------------------------------------------------------
 
+--
+--Table structure for table ubicacion
+-
+
+CREATE TABLE ubicacion (
+  id int(11) NOT NULL,
+  latitud float(20) DEFAULT NULL,
+  longitud float(20) DEFAULT NULL,
+ ) ENGINE=InnoDB DEFAULT CHARSET=utfmb4;
+  
 --
 -- Table structure for table usuarios
 --
@@ -29,3 +40,16 @@ CREATE TABLE usuarios (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+
+--
+--Table structure for table ubicacion
+-
+
+CREATE TABLE ubicacion (
+  id int(11) NOT NULL,
+  latitud float(20) DEFAULT NULL,
+  longitud float(20) DEFAULT NULL,
+ ) ENGINE=InnoDB DEFAULT CHARSET=utfmb4;
+  
+ --
+ ----------------------------------------------------------------------------
