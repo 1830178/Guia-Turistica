@@ -42,14 +42,10 @@ CREATE TABLE usuarios (
 --
 
 --
---Table structure for table ubicacion
+--Table structure for table municipio
 -
 
-CREATE TABLE ubicacion (
-  id int(11) NOT NULL,
-  latitud float(20) DEFAULT NULL,
-  longitud float(20) DEFAULT NULL,
- ) ENGINE=InnoDB DEFAULT CHARSET=utfmb4;
+CREATE TABLE `turismo_db`. ( `id` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL , `latitud` POINT(20) NOT NULL , `longitud` POINT(20) NOT NULL , `descripcion` VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL , PRIMARY KEY (`id`(11))) ENGINE = InnoDB;
   
  --
  ----------------------------------------------------------------------------
